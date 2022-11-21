@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="/scripts/counter.js" defer></script>
+    <title>TypeScript Counter</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__link">
+          <img
+            src="../assets/logo/ts-logo-128.svg"
+            alt="logo"
+            class="header__logo"
+          />
+        </a>
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="/counter.html" class="nav__link nav__link--active"
+              >counter</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/todos.html" class="nav__link">todos</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="counter-page">
+      <div class="main counter-page__container">
+        <h1 class="counter-title">Counter</h1>
+        <div class="counter">
+          <span id="counter__value" class="counter__value">0</span>
+          <div id="counter__actions" class="counter__actions">
+            <button id="counter__decrement" class="button counter__decrement">
+              -
+            </button>
+            <button id="counter__increment" class="button counter__increment">
+              +
+            </button>
+          </div>
+          <form id="counter__form" class="counter__form">
+            <div class="counter__input-container">
+              <label for="incrementor" class="counter__label"
+                >increment/decrement by:</label
+              >
+              <input
+                id="incrementor"
+                name="incrementor"
+                class="counter__input"
+                type="number"
+                value="1"
+                min="1"
+                max="10"
+              />
+            </div>
+            <button class="button counter__submit">apply</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

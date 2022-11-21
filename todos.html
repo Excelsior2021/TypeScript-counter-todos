@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../scripts/todos.js" defer></script>
+    <title>TypeScript Todos</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__link">
+          <img
+            src="../assets/logo/ts-logo-128.svg"
+            alt="logo"
+            class="header__logo"
+          />
+        </a>
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="/counter.html" class="nav__link">counter</a>
+          </li>
+          <li class="nav__item">
+            <a href="/todos.html" class="nav__link nav__link--active">todos</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="todos-page">
+      <div class="todos-page__container">
+        <h1 class="todos-page__title">Todos</h1>
+        <div class="todos-page__instructions-container">
+          <p class="todo-page__instructions">
+            Click once to mark a todo as completed. Click twice to delete a
+            todo.
+          </p>
+        </div>
+        <div id="todos" class="todos">
+          <form id="todos__form" class="todos__form">
+            <label for="todo" class="todos__label"
+              >What do you need to do?</label
+            >
+            <input name="todo" type="text" class="todos__input" />
+            <button class="button todos__submit">submit todo</button>
+          </form>
+
+          <ul id="todos__list" class="todos__list"></ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
