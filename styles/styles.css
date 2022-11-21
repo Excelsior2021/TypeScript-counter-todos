@@ -224,4 +224,8 @@ body {
   color: #3278c6;
   font-size: 2rem;
   margin: auto;
+}
+
+.hit-counter {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */
