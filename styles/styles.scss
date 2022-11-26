@@ -32,6 +32,9 @@
   }
 
   &__link {
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
     color: #fff;
     text-decoration: none;
     padding: inherit;
@@ -45,6 +48,10 @@
 }
 
 .button {
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: none;
+  }
   cursor: pointer;
   width: 100%;
   max-width: 200px;
@@ -64,10 +71,15 @@
   }
 
   &__title {
+    text-align: center;
     margin: 20px auto;
   }
 
   &__links {
+    @media (max-width: 768px) {
+      width: 90%;
+      min-width: none;
+    }
     margin: auto;
     min-width: 300px;
   }
@@ -109,6 +121,9 @@
 }
 
 .counter {
+  @media (max-width: 768px) {
+    width: 90%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,6 +160,10 @@
   }
 
   &__form {
+    @media (max-width: 768px) {
+      width: 100%;
+      min-width: 0;
+    }
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -161,6 +180,9 @@
   }
 
   &__input {
+    @media (max-width: 768px) {
+      width: 50%;
+    }
     padding: 10px;
     border-radius: 4px;
     border: 1px solid $typescript-blue;
@@ -181,6 +203,9 @@
 
 .todos-page {
   &__container {
+    @media (max-width: 768px) {
+      width: 90%;
+    }
     display: flex;
     flex-direction: column;
     max-width: $max-width;
@@ -202,6 +227,10 @@
 
 .todos {
   &__form {
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: none;
+    }
     display: flex;
     flex-direction: column;
     max-width: 500px;
@@ -237,6 +266,9 @@
   }
 
   &__item {
+    @media (max-width: 768px) {
+      max-width: none;
+    }
     color: #fff;
     background-color: $typescript-blue;
     cursor: pointer;
